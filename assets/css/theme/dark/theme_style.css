@@ -744,7 +744,8 @@ body {
 .page-header.navbar .menu-toggler>span:hover,
 .page-header.navbar .menu-toggler>span:hover:after,
 .page-header.navbar .menu-toggler>span:hover:before {
-    background: #a7b5c6;
+    background: #000;
+	font-weight:bold;
 }
 .page-header.navbar .menu-toggler.th-toggle-exit>span {
     background-color: transparent!important;
