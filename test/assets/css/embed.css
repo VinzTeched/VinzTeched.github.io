@@ -1,0 +1,290 @@
+#mtnbot-container::-webkit-scrollbar {
+  width: 0;
+}
+#mtnbot-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+}
+#mtnbot-container::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0px solid slategrey;
+}
+#mtnbot-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1040;
+    width: 80px;
+    padding: 0 5px;
+    height: 120px;
+}
+#mtnbot-container.opened {
+    z-index: 999999999999999999;   
+}
+#mtnbot-container .mtnbot-close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1040;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.25rem;
+    background: rgba(0,0,0,.2);
+    color: #fff;
+    cursor: pointer;
+    background-image: url('./close.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mtnbot-container .open-chatbox {
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    position: relative;
+    bottom: 0px;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#mtnbot-container.opened .open-chatbox {
+    display: none !important;
+}
+#mtnbot-container .open-chatbox .koko {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    transition: bottom .2s ease-in-out;
+}
+#mtnbot-container .open-chatbox .koko-bubble {
+	opacity: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 28px;
+    transition: all .4s;
+    transform: scale(1);
+}
+#mtnbot-container:hover .open-chatbox .koko {
+    bottom: 5px;
+}
+#mtnbot-container:hover .open-chatbox .koko-bubble {
+    opacity: 0;
+    transform: scale(0);
+    transition: all .2s;
+}
+#mtnbot-container .open-chatbox.show {
+    bottom: 0;
+}
+#mtnbot-container:hover  .open-chatbox {
+    /*box-shadow: 0 1pt 14pt rgba(0, 0, 0, .20);*/
+    /*-webkit-transform: scale(1.05);*/
+    /*transform: scale(1.05);*/
+}
+#mtnbot-container .mtnbot-modal {    
+    position: absolute;
+    width: 415px;
+    height: 95vh;
+    max-height: 700px;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    z-index: 999999;
+    padding: 0;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 1pt 12pt rgba(0, 0, 0, .20);
+    border-radius: 0.5rem;
+}
+#mtnbot-container .mtnbot-modal .mtnbot-modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 950px;
+    margin: 0 auto 0 0;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+}
+#mtnbot-container .mtnbot-modal .mtnbot-modal-header .close-chatbox {
+    position: absolute;
+    top: -26px;
+    right: 0;
+    font-size: 24px;
+    font-weight: 600;
+    z-index: 1010;
+    color: #000;
+}
+#mtnbot-container .mtnbot-modal .mtnbot-modal-body {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+#mtnbot-container .mtnbot-modal .mtnbot-modal-body iframe {
+    position: relative;
+    z-index: 3;
+    display: block;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 1;
+    border-radius: 6px;
+    border: none;
+}
+
+#mtnbot-container .balloon {
+    background-color: white;
+    border-radius: 2rem;
+    display: block;
+    color: black;
+    width: 9em;
+    position: absolute;
+    padding: 1rem 1rem 0.5rem 1rem;
+    bottom: 50px;
+    right: 44px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    z-index: 1000000;
+    opacity: 0;
+	transform: scale(0, 0);
+    transition-delay: all 5s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+#mtnbot-container.show .open-chatbox .koko {
+	animation-name: jump;
+	animation-timing-function: ease;
+	animation-duration: 0.45s;
+	animation-iteration-count: 4;	
+}
+#mtnbot-container.show_balloon .balloon {
+    opacity: 1;
+	transform: scale(1, 1);
+    bottom: 65px;
+    transition-delay: all 5s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+#mtnbot-container:hover .balloon {
+	bottom: 85px;
+    transition-delay: bottom 0s ease-in-out;
+}
+
+#mtnbot-container .balloon h4 {
+	font-weight: bolder;
+	font-size: medium;
+	margin-bottom: 0.5rem !important;
+}
+#mtnbot-container .balloon p {
+	font-size: small;
+	font-weight: lighter;
+}
+#mtnbot-container .balloon h4,
+#mtnbot-container .balloon p {
+	margin: 0;
+}
+#mtnbot-container .balloon button {
+	font-size: 0.95rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	text-transform: none;
+	width: 100%;
+	padding: 0.25rem;
+	background: rgb(255, 204, 1);
+	border-color: transparent;
+	border-radius: 2rem;
+    font-weight: bold;
+	cursor: pointer;
+}
+#mtnbot-container .balloon button:after {
+    content: ">";
+    position: absolute;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+#mtnbot-container .balloon:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	right: 2rem;
+	width: 0;
+	border-top: 1rem solid white;
+	border-left: 1.5rem solid transparent;
+	border-right: 0.1rem solid transparent;
+}
+#mtnbot-container .koko-bubble {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    transition-delay: .4s;	
+}
+#mtnbot-container.show .koko-bubble {
+	opacity: 0;
+}
+#mtnbot-container:not(.show) .balloon {
+	opacity: 0;	
+}
+#mtnbot-container .balloon button:hover {
+	background: rgba(255, 204, 1, 0.6);
+}
+#mtnbot-container.opened .balloon {
+	display: none;
+ }
+ #mtnbot-container .balloon.hidden {
+ 	display: none;
+ }
+ #mtnbot-container .balloon .close_trigger {
+     position: absolute;
+     right: 1rem;
+     text-decoration: none;
+     color: black;
+ } 
+
+ @keyframes jump {
+     0%   { transform: translateY(0); }
+     25%  { transform: translateY(4); }
+     50%  { transform: translateY(0px); }
+     75%  { transform: translateY(-4px); }
+     100% { transform: translateY(0); }
+ }
+ 
+@media (max-width: 998px) {
+
+}
+@media (max-width: 500px) {
+   #mtnbot-container.opened {
+    width: 100%; 
+    height: 100%;
+    padding: 0;
+   }
+   #mtnbot-container .mtnbot-modal {
+       top: auto;
+       left: auto;
+       right: 0.5rem;
+       bottom: 0.5rem;
+   }
+}
+@media (max-width: 414px) {
+   #mtnbot-container.opened {
+    width: 100%; 
+    height: 100%;
+    padding: 0;
+   }
+   #mtnbot-container .mtnbot-modal {
+       top: 0;
+       left: auto;
+       right: 0;
+        bottom: 0;
+        height: 100%;
+        max-height: 100%;
+        width: 100%;
+        max-width: 414px;
+   }
+}

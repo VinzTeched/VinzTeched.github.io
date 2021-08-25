@@ -1,0 +1,172 @@
+/*!
+Theme Name: mtn-theme Child 3.0.0
+Author: Playhouse Communications
+Author URI: http://www.playhousecomm.com/
+Description: This is the child theme for mtn-theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Template: mtn-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+MTN Theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+.grid-padding{
+    padding:15px!important;
+}
+
+.mtn-banner .mtn-curve {
+	z-index: 1 !important;
+}
+
+@media (min-width: 768px) {
+	.mtn-btn-group--desktop-floating .mtn-btn-group__floating {
+		padding: 20px 0 !important;
+	}
+}
+
+.mtn-card.mtn-card--product .mtn-card--product__price {
+    font-family: MTNBrighterSans-ExtraBold,Century Gothic,Arial,sans-serif;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.mtn-text-copyright,.mtn-text-copyright a,.mtn-text-copyright p {
+    font-size: 11px !important;
+}
+
+.showdepth{
+    display: block!important;
+}
+.seedepth{
+    float: right;
+    visibility: hidden;
+}
+.seedepth:after{
+    font-family: Material Icons;
+    font-size: 18px;
+    content: "\e313";
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    visibility: visible;
+}
+
+
+.hidedepth:after{
+    content: "\e316";
+}
+@media only screen and (min-width: 767px){
+    .seedepth:after{
+        display: none!important;
+    }
+    
+}
+@media only screen and (max-width: 766px){
+    .mtn-accordion__item:after{
+        display: none!important;
+    }
+}
+
+.cookie_terms {
+    position: fixed;z-index: 999999;bottom: 0;background: rgba(27, 27, 25, 0.95);padding: 30px 10%;left: 0;right: 0;color: #fff;
+}
+.cookie_terms .mtn-btn { display: block;color: #000 !important;line-height: 40px !important; }
+@media(min-width: 950px) {
+    .cookie_terms div {
+        position: absolute;right: 15px;top: 20px;
+    }
+}
+@media(max-width: 949px) {
+    .cookie_terms div {
+        margin-top: 10px;
+        display: table;
+    }
+}
+
+
+.data_sms_click {
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    display: block;
+} {
+    max-height: unset;
+}
+
+.mtn-card--product a {
+    text-decoration: none !important;
+}
+.mtn-card--product .mtn-btn-link {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.mtn-card--product .mtn-btn-link button {
+    position: unset !important;
+    bottom: unset !important;
+    right: unset !important;
+}
+
+.data_sms_click button {
+    outline: none;
+    position: unset !important;
+}
+
+@media(max-width: 767px) {
+    .mtn-btn-group--desktop-floating .mtn-btn.mtn-btn--text-right-icon.outline-white.text-c-black {
+        width: 100% !important;
+    }
+}
+
+iframe.basic {
+    width: 100%;
+    border: none;
+    height: 500px;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
+.mtn-accordion-section.mtn-accordion.mtn-accordion--light .mtn-accordion__panel .mtn-accordion__content {
+    max-height: unset;
+}
+
+.iconbox {
+    border-radius: 20px;
+    margin-bottom: 6px;
+    border-color: #fff;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.iconbox-shadow {
+    box-shadow: 0 0 0 2px #f2f2f2;
+    transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+}
+
+.iconbox:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+}
+
+.icon {
+    font-size: 102px;
+    color: #fc0 ;
+}
+
+.iconbox .text{
+    font-weight: 500;
+    font-size: 14px;
+}

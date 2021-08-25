@@ -1,0 +1,8 @@
+@font-face {
+font-family: "MTNBrighterSans-Medium";
+src: url("../fonts/MTNBrighterSans-Medium.eot");
+src: url("../fonts/MTNBrighterSans-Medium.woff") format("woff");
+}
+html body {
+    font-family: MTNBrighterSans-Medium;
+}

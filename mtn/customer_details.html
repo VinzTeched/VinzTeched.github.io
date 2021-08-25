@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Responsive Admin Template" />
+	<meta name="author" content="SmartUniversity" />
+	<title>MTN - Nursery</title>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+	<!-- icons -->
+	<link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+	<!--bootstrap -->
+	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/plugins/summernote/summernote.css" rel="stylesheet">
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="../assets/plugins/material/material.min.css">
+	<link rel="stylesheet" href="../assets/css/material_style.css">
+	<!-- inbox style -->
+	<link href="../assets/css/pages/inbox.min.css" rel="stylesheet" type="text/css" />
+	<!-- Theme Styles -->
+	<link href="../assets/css/theme/dark/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="../assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/dark/style.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/dark/theme-color.css" rel="stylesheet" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../test/assets/images/mtn-logo-nav.svg" />
+</head>
+<!-- END HEAD -->
+
+<body
+	class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-dark dark-sidebar-color logo-dark dark-theme">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top" style="background: #ffd200">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo"style="background: #ffd200">
+					<a href="index.html">
+						<img src="../test/assets/images/mtn-logo-nav.svg" alt="MTN Online" width="40" class="logo- icon" />
+						<span class="logo-default text-dark">MTN</span> </a>
+				</div>
+				<!-- logo end -->
+				<ul class="nav navbar-nav navbar-left in">
+					<li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"style="color:#000;font-weight: bold;"></i></a></li>
+				</ul>
+				<a href="javascript:;" style="color:#000;font-weight: bold;font-size: 18px;float: left;margin-top:13px;">MTN Nursery Management Portal</a>
+				<!-- start mobile menu -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						<!-- end language menu -->
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<img alt="" class="img-circle " src="../assets/img/dp.jpg" />
+								<span class="username username-hide-on-mobile"> Ada </span>
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="#">
+										<i class="icon-user"></i> Profile </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-settings"></i> Settings
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-directions"></i> Help
+									</a>
+								</li>
+								<li class="divider"> </li>
+								<li>
+									<a href="../test/login.html">
+										<i class="icon-logout"></i> Log Out </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			<div class="sidebar-container">
+				<div class="sidemenu-container navbar-collapse collapse fixed-menu" style="background: #000">
+					<div id="remove-scroll" class="left-sidemenu">
+						<ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false"
+							data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+							<li class="sidebar-toggler-wrapper hide">
+								<div class="sidebar-toggler">
+									<span></span>
+								</div>
+							</li>
+							<li class="sidebar-user-panel">
+								<div class="user-panel">
+									<div class="pull-left image">
+										<img src="../assets/img/dp.jpg" class="img-circle user-img-circle"
+											alt="User Image" />
+									</div>
+									<div class="pull-left info">
+										<p> Ada Kelvin</p>
+										<a href="#"><i class="fa fa-circle user-online"></i><span class="txtOnline">
+												Online</span></a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item start active open">
+								<a href="index.html" class="nav-link nav-toggle">
+									<i class="material-icons">dashboard</i>
+									<span class="title">Dashboard</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"><i class="material-icons">group</i>
+									<span class="title">Customers</span><span class="arrow"></span></a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="all_customers.html" class="nav-link "> <span class="title">All
+												 Customers</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="account_officer_customers.html" class="nav-link "> <span class="title">Customers managed by officer</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="spend_analysis.html" class="nav-link nav-toggle"> <i class="material-icons">school</i>
+									<span class="title">Spend Analysis</span> 
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="digital_adoption.html" class="nav-link nav-toggle"> <i class="material-icons">business</i>
+									<span class="title">Digital Adoption</span> 
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="reports.html" class="nav-link nav-toggle">
+									<i class="material-icons">list</i>
+									<span class="title">Reports</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end sidebar menu -->
+			<!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Customer Profile</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+										href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li><a class="parent-item" href="">Customer</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Customer Profile</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- BEGIN PROFILE SIDEBAR -->
+							<div class="profile-sidebar">
+								<div class="card card-topline-aqua">
+									<div class="card-body no-padding height-9">
+										<div class="row">
+											<div class="profile-userpic">
+												<img src="../assets/img/std/std3.jpg" class="img-responsive" alt="">
+											</div>
+										</div>
+										<div class="profile-usertitle">
+											<div class="profile-usertitle-name">Sarah Smith </div>
+										</div>
+										<ul class="list-group list-group-unbordered">
+											<li class="list-group-item">
+												<b>Mobile</b> <a class="pull-right">08032006456</a>
+											</li>
+											<li class="list-group-item">
+												<b>Date of Birth</b> <a class="pull-right">20/08/1990</a>
+											</li>
+											<li class="list-group-item">
+												<b>Total Spending AUG 2021</b> <a class="pull-right">&#8358;1,200</a>
+											</li>
+											<li class="list-group-item">
+												<b>Network Mode</b> <a class="pull-right">4G</a>
+											</li>
+											<li class="list-group-item">
+												<b>Network Status</b> <a class="pull-right">Active</a>
+											</li>
+											<li class="list-group-item">
+												<b>NIN Status</b> <a class="pull-right">Confirmed</a>
+											</li>
+										</ul>
+										<!-- END SIDEBAR USER TITLE -->
+									</div>
+								</div>
+							</div>
+							<!-- END BEGIN PROFILE SIDEBAR -->
+							<!-- BEGIN PROFILE CONTENT -->
+							<div class="profile-content">
+								<div class="row">
+									<div class="card">
+										<div class="card-topline-aqua">
+											<header></header>
+										</div>
+										<div class="white-box">
+											<!-- Nav tabs -->
+											<div class="p-rl-20">
+												<ul class="nav customtab nav-tabs" role="tablist">
+													<li class="nav-item"><a href="#tab1" class="nav-link active"
+															data-toggle="tab">About Me</a></li>
+													<li class="nav-item"><a href="#tab2" class="nav-link"
+															data-toggle="tab">Activity</a></li>
+												</ul>
+											</div>
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div class="tab-pane active fontawesome-demo" id="tab1">
+								<div class="card">
+									<div class="card-body no-padding height-9">
+										<div class="profile-desc">
+											This is an overview and details of an MTN nursery customer.
+										</div>
+										<ul class="list-group list-group-unbordered">
+											<li class="list-group-item">
+												<b>Location </b>
+												<div class="profile-desc-item pull-right">Kaduna</div>
+											</li>
+											<li class="list-group-item">
+												<b>Region</b>
+												<div class="profile-desc-item pull-right">NW</div>
+											</li>
+											<li class="list-group-item">
+												<b>Account Officer </b>
+												<div class="profile-desc-item pull-right">Chinedu Ade</div>
+											</li>
+											<li class="list-group-item">
+												<b>Handset Type</b>
+												<div class="profile-desc-item pull-right">Samsung S7</div>
+											</li>
+											<li class="list-group-item">
+												<b>Segment </b>
+												<div class="profile-desc-item pull-right">C</div>
+											</li>
+											<li class="list-group-item">
+												<b>Product Description</b>
+												<div class="profile-desc-item pull-right">MTN BetaTalk</div>
+											</li>
+											<li class="list-group-item">
+												<b>Sim Activation Date</b> <div class="profile-desc-item pull-right">12/02/2021</div>
+											</li>
+											<li class="list-group-item">
+												<b>Nursery Activation Date</b> <div class="profile-desc-item pull-right">15/06/2021</div>
+											</li>
+											<li class="list-group-item">
+												<b>Nursery End Date</b> <div class="profile-desc-item pull-right">15/08/2021</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+												</div>
+												<div class="tab-pane" id="tab2">
+													<div class="container-fluid">
+														<div class="row">
+															<div class="full-width p-rl-20">
+																<ul class="activity-list">
+																	<li>
+																		<div class="avatar">
+																			<img src="../assets/img/std/std3.jpg"
+																				alt="" />
+																		</div>
+																		<div class="activity-desk">
+																			<h5><a href="#">John Doe</a> <span>attended
+																					a meeting with</span>
+																				<a href="#">Lina Smith.</a></h5>
+																			<p class="text-muted">2 days ago near
+																				Alaska, USA</p>
+																		</div>
+																	</li>
+																	<li>
+																		<div class="avatar">
+																			<img src="../assets/img/std/std4.jpg"
+																				alt="" />
+																		</div>
+																		<div class="activity-desk">
+																			<h5><a href="#">Kehn Anderson</a>
+																				<span>completed the task “wireframe
+																					design” within the dead line</span>
+																			</h5>
+																			<p class="text-muted">4 days ago near
+																				Alaska, USA</p>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END PROFILE CONTENT -->
+						</div>
+					</div>
+				</div>
+				<!-- end page content -->
+				
+		</div>
+		<!-- end page container -->
+		<!-- start footer -->
+		<div class="page-footer">
+			<div class="page-footer-inner"> 2019 MTN Nursery Management Portal
+			</div>
+			<div class="scroll-to-top">
+				<i class="icon-arrow-up"></i>
+			</div>
+		</div>
+		<!-- end footer -->
+	</div>
+	<!-- start js include path -->
+	<script src="../assets/plugins/jquery/jquery.min.js"></script>
+	<script src="../assets/plugins/popper/popper.js"></script>
+	<script src="../assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+	<script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<!-- bootstrap -->
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	<script src="../assets/plugins/sparkline/jquery.sparkline.js"></script>
+	<script src="../assets/js/pages/sparkline/sparkline-data.js"></script>
+	<!-- Common js-->
+	<script src="../assets/js/app.js"></script>
+	<script src="../assets/js/layout.js"></script>
+	<script src="../assets/js/theme-color.js"></script>
+	<!-- material -->
+	<script src="../assets/plugins/material/material.min.js"></script>
+	<!-- chart js -->
+	<script src="../assets/plugins/chart-js/Chart.bundle.js"></script>
+	<script src="../assets/plugins/chart-js/utils.js"></script>
+	<script src="../assets/js/pages/chart/chartjs/home-data.js"></script>
+	<!-- summernote -->
+	<script src="../assets/plugins/summernote/summernote.js"></script>
+	<script src="../assets/js/pages/summernote/summernote-data.js"></script>
+	<!-- end js include path -->
+</body>
+
+</html>

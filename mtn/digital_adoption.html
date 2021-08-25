@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Responsive Admin Template" />
+	<meta name="author" content="SmartUniversity" />
+	<title>MTN - Nursery</title>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+	<!-- icons -->
+	<link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+	<!--bootstrap -->
+	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="../assets/plugins/material/material.min.css">
+	<link rel="stylesheet" href="../assets/css/material_style.css">
+	<!-- Data Tables -->
+	<link href="../assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet"
+		type="text/css" />
+	<link href="../assets/plugins/datatables/export/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+	<!-- Theme Styles -->
+	<link href="../assets/css/theme/dark/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="../assets/css/theme/dark/style.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/dark/theme-color.css" rel="stylesheet" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../test/assets/images/mtn-logo-nav.svg" />
+</head>
+<!-- END HEAD -->
+
+<body
+	class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-dark dark-sidebar-color logo-dark dark-theme">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top" style="background: #ffd200">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo"style="background: #ffd200">
+					<a href="index.html">
+						<img src="../test/assets/images/mtn-logo-nav.svg" alt="MTN Online" width="40" class="logo- icon" />
+						<span class="logo-default text-dark">MTN</span> </a>
+				</div>
+				<!-- logo end -->
+				<ul class="nav navbar-nav navbar-left in">
+					<li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"style="color:#000;font-weight: bold;"></i></a></li>
+				</ul>
+				<a href="javascript:;" style="color:#000;font-weight: bold;font-size: 18px;float: left;margin-top:13px;">MTN Nursery Management Portal</a>
+				<!-- start mobile menu -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						<!-- end language menu -->
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<img alt="" class="img-circle " src="../assets/img/dp.jpg" />
+								<span class="username username-hide-on-mobile"> Ada </span>
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="#">
+										<i class="icon-user"></i> Profile </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-settings"></i> Settings
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-directions"></i> Help
+									</a>
+								</li>
+								<li class="divider"> </li>
+								<li>
+									<a href="../test/login.html">
+										<i class="icon-logout"></i> Log Out </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			<div class="sidebar-container">
+				<div class="sidemenu-container navbar-collapse collapse fixed-menu" style="background: #000">
+					<div id="remove-scroll" class="left-sidemenu">
+						<ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false"
+							data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+							<li class="sidebar-toggler-wrapper hide">
+								<div class="sidebar-toggler">
+									<span></span>
+								</div>
+							</li>
+							<li class="sidebar-user-panel">
+								<div class="user-panel">
+									<div class="pull-left image">
+										<img src="../assets/img/dp.jpg" class="img-circle user-img-circle"
+											alt="User Image" />
+									</div>
+									<div class="pull-left info">
+										<p> Ada Kelvin</p>
+										<a href="#"><i class="fa fa-circle user-online"></i><span class="txtOnline">
+												Online</span></a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item start active open">
+								<a href="index.html" class="nav-link nav-toggle">
+									<i class="material-icons">dashboard</i>
+									<span class="title">Dashboard</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"><i class="material-icons">group</i>
+									<span class="title">Customers</span><span class="arrow"></span></a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="all_customers.html" class="nav-link "> <span class="title">All
+												 Customers</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="account_officer_customers.html" class="nav-link "> <span class="title">Customers managed by officer</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="spend_analysis.html" class="nav-link nav-toggle"> <i class="material-icons">school</i>
+									<span class="title">Spend Analysis</span> <span class="arrow"></span>
+									<span class="label label-rouded label-menu label-success">new</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="digital_adoption.html" class="nav-link nav-toggle"> <i class="material-icons">business</i>
+									<span class="title">Digital Adoption</span> 
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="reports.html" class="nav-link nav-toggle">
+									<i class="material-icons">list</i>
+									<span class="title">Reporting</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end sidebar menu -->
+			<!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Digital Adoption</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+										href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li><a class="parent-item" href="">Users</a>&nbsp;<i
+										class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Digital Adoption</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="card card-box">
+								<div class="card-body " id="bar-parent">
+											<div class="table-scrollable">
+									<table id="exportTable" class="display nowrap" style="width:100%">
+										<thead>
+											<tr>
+												<th>MSISDN</th>
+												<th>MyMTNApp</th>
+												<th>AYOBA</th>
+												<th>ZIGI</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>08032002828</td>
+												<td>Active</td>
+												<td>Active</td>
+												<td>Nil</td>
+											</tr>
+											<tr>
+												<td>08032001728</td>
+												<td>Nil</td>
+												<td>Active</td>
+												<td>Active</td>
+											</tr>
+											<tr>
+												<td>08062002228</td>
+												<td>Active</td>
+												<td>Nil</td>
+												<td>Active</td>
+											</tr>
+											<tr>
+												<td>08032002828</td>
+												<td>Nil</td>
+												<td>Nil</td>
+												<td>Nil</td>
+											</tr>
+											<tr>
+												<td>08032002828</td>
+												<td>Active</td>
+												<td>Nil</td>
+												<td>Active</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>MSISDN</th>
+												<th>MyMTNApp</th>
+												<th>AYOBA</th>
+												<th>ZIGI</th>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end page content -->
+			
+		</div>
+		<!-- end page container -->
+		<!-- start footer -->
+		<div class="page-footer">
+			<div class="page-footer-inner"> 2019 MTN Nursery Management Portal
+			</div>
+			<div class="scroll-to-top">
+				<i class="icon-arrow-up"></i>
+			</div>
+		</div>
+		<!-- end footer -->
+	</div>
+	<script src="../assets/plugins/jquery/jquery.min.js"></script>
+	<script src="../assets/plugins/popper/popper.js"></script>
+	<script src="../assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+	<script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<!-- bootstrap -->
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	<!-- Common js-->
+	<script src="../assets/js/app.js"></script>
+	<script src="../assets/js/layout.js"></script>
+	<script src="../assets/js/theme-color.js"></script>
+	<!-- Material -->
+	<script src="../assets/plugins/material/material.min.js"></script>
+	<!-- Data Table -->
+	<script src="../assets/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="../assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js"></script>
+	<script src="../assets/plugins/datatables/export/dataTables.buttons.min.js"></script>
+	<script src="../assets/plugins/datatables/export/buttons.flash.min.js"></script>
+	<script src="../assets/plugins/datatables/export/jszip.min.js"></script>
+	<script src="../assets/plugins/datatables/export/pdfmake.min.js"></script>
+	<script src="../assets/plugins/datatables/export/vfs_fonts.js"></script>
+	<script src="../assets/plugins/datatables/export/buttons.html5.min.js"></script>
+	<script src="../assets/plugins/datatables/export/buttons.print.min.js"></script>
+	<script src="../assets/js/pages/table/table_data.js"></script>
+	<!-- end js include path -->
+</body>
+
+</html>
