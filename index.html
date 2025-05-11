@@ -206,28 +206,28 @@
           <div class="top-menu">
             <ul>
               <li class="active">
-                <a href="index.html#about-card">
+                <a href="#about-card">
                   <span class="icon ion-person"></span>
                   <span class="link">About</span>
                 </a>
               </li>
 
               <li>
-                <a href="index.html#resume-card">
+                <a href="#resume-card">
                   <span class="icon ion-android-list"></span>
                   <span class="link">Resume</span>
                 </a>
               </li>
 
               <li>
-                <a href="index.html#works-card">
+                <a href="#works-card">
                   <span class="icon ion-paintbrush"></span>
                   <span class="link">Works</span>
                 </a>
               </li>
 
               <li>
-                <a href="index.html#contact-card">
+                <a href="#contact-card">
                   <span class="icon ion-at"></span>
                   <span class="link">Contact</span>
                 </a>
@@ -828,10 +828,6 @@
                       </li>
 
                       <li>
-                        <div class="name">Technical Support</div>
-                      </li>
-
-                      <li>
                         <div class="name">Code Versioning (Git)</div>
                       </li>
 
@@ -878,15 +874,10 @@
 
                 <div class="f_btn">
                   <label
-                    ><input type="radio" name="fl_radio" value="photo" />Api
-                    Development</label
-                  >
-                </div>
-
-                <div class="f_btn">
-                  <label
-                    ><input type="radio" name="fl_radio" value="video" />Full
-                    Stack Development</label
+                    ><input
+                      type="radio"
+                      name="fl_radio"
+                      value="photo" />Frontend</label
                   >
                 </div>
 
@@ -895,16 +886,7 @@
                     ><input
                       type="radio"
                       name="fl_radio"
-                      value="music" />Database Programming</label
-                  >
-                </div>
-
-                <div class="f_btn">
-                  <label
-                    ><input
-                      type="radio"
-                      name="fl_radio"
-                      value="design" />Technical Support</label
+                      value="video" />Backend</label
                   >
                 </div>
               </div>
@@ -1037,7 +1019,7 @@
 
                       <li><strong>Email: </strong> chibundoilonze@gmail.com</li>
 
-                      <li><strong>Phone: </strong> +234 803 123 4567</li>
+                      <li><strong>Phone: </strong> +234 8162756220</li>
 
                       <li>
                         <strong>Availability: </strong> Full-time/ Part-time
@@ -1056,8 +1038,8 @@
                 <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
                   <div class="contact_form">
                     <form
-                      id="cform"
-                      action="https://formspree.io/f/meqnbjzk"
+                      id="dform"
+                      action="https://formspree.io/f/mrbqaqbz"
                       method="POST">
                       <div class="row">
                         <div class="col col-d-6 col-t-6 col-m-12">
@@ -1088,10 +1070,7 @@
                         </div>
                       </div>
                       <div class="align-left">
-                        <a
-                          href="#"
-                          class="button"
-                          onclick="$('#cform').submit(); return false;">
+                        <a href="#" class="button" onclick="submitForm(event);">
                           <span class="text">Send Message</span>
                           <span class="arrow"></span>
                         </a>
@@ -1103,6 +1082,15 @@
                     id="formAlertSuccess"
                     style="display: none">
                     <p>Thanks, your message is sent successfully.</p>
+                  </div>
+                  <div
+                    class="alert-error"
+                    id="formAlertError"
+                    style="display: none">
+                    <p>
+                      Sorry, there was an error sending your message. Please try
+                      again.
+                    </p>
                   </div>
                 </div>
                 <div class="clear"></div>
@@ -1171,6 +1159,37 @@
       events.forEach((event) => {
         document.addEventListener(event, lazyloadRunObserver);
       });
+    </script>
+
+    <script type="text/javascript">
+      function submitForm(event) {
+        event.preventDefault();
+
+        const form = document.getElementById("dform");
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              document.getElementById("formAlertSuccess").style.display =
+                "block";
+              document.getElementById("formAlertError").style.display = "none";
+              form.reset();
+            } else {
+              throw new Error("Network response was not ok");
+            }
+          })
+          .catch((error) => {
+            document.getElementById("formAlertError").style.display = "block";
+            document.getElementById("formAlertSuccess").style.display = "none";
+          });
+      }
     </script>
   </body>
 </html>

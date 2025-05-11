@@ -101,3 +101,23 @@ body.body-style-dark .canvas-cyberlines .light {
 .header .top-menu ul {
   background: #161616 !important;
 }
+
+.alert-success {
+  background: #ebfffb !important;
+  color: #003101 !important;
+  border-color: #003101 !important;
+  padding: 10px 20px !important;
+  border-radius: 10px !important;
+}
+
+.alert-success .close {
+  color: #003101 !important;
+}
+
+.alert-success .close:hover {
+  color: #003101 !important;
+}
+
+.alert-success .close:focus {
+  color: #fff !important;
+}
