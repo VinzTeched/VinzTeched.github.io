@@ -1,0 +1,103 @@
+/* background canvas */
+.canvas {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.canvas canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* background tetris */
+.canvas.canvas-tetris {
+  background-color: #282f33;
+}
+
+/* background perspective */
+.canvas.canvas-perspective {
+  background-image: -webkit-linear-gradient(135deg, #003073, #029797);
+  background-image: linear-gradient(135deg, #003073, #029797);
+}
+
+/* background particles */
+.canvas.canvas-particles {
+  background: #262b2e;
+}
+
+.canvas.canvas-particles canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* background cyberlines */
+.canvas.canvas-cyberlines {
+  display: flex;
+  justify-content: center;
+  background: #222222;
+}
+
+.canvas-cyberlines svg {
+  position: absolute;
+  height: 100%;
+}
+
+.canvas-cyberlines .lines {
+  opacity: 0.05;
+}
+
+.canvas-cyberlines .line {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #7a6bb5;
+}
+
+.canvas-cyberlines .lights {
+  opacity: 1;
+}
+
+.canvas-cyberlines .light {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #7a6bb5;
+}
+
+/* background spiral */
+.canvas.canvas-spiral {
+  background: #000;
+}
+
+/* background matrix */
+.canvas.canvas-matrix canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.canvas.canvas-cyberlines {
+  background-color: #161616 !important;
+}
+
+body.body-style-dark .canvas.canvas-cyberlines {
+  background-color: #161616 !important;
+}
+
+.canvas-cyberlines .line,
+.canvas-cyberlines .light {
+  fill: #f6b846 !important;
+}
+
+body.body-style-dark .canvas-cyberlines .line,
+body.body-style-dark .canvas-cyberlines .light {
+  fill: #f6b846 !important;
+}
+
+.header .top-menu ul {
+  background: #161616 !important;
+}
