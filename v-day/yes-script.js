@@ -9,6 +9,19 @@ window.addEventListener('load', () => {
     music.play().catch(() => {})
     musicPlaying = true
     document.getElementById('music-toggle').textContent = '🔊'
+
+    // Dynamic WhatsApp Number Logic
+    const params = new URLSearchParams(window.location.search)
+    const ref = params.get('ref')
+    const waContainer = document.getElementById('whatsapp-container')
+    const waLink = document.getElementById('whatsapp-link')
+
+    if (ref) {
+        waLink.href = `https://wa.me/${ref}?text=Yes%20I%20will%20be%20your%20valentine!%20%F0%9F%92%96`
+        waContainer.style.display = 'flex' // Ensure it's visible if hidden by CSS
+    } else {
+        waContainer.style.display = 'none' // Hide if no ref matches
+    }
 })
 
 function launchConfetti() {
